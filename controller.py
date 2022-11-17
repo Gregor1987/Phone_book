@@ -9,9 +9,8 @@ def phone_book(login):
     if ops_type == '1':
         search_el = view.search_element()
         data = export_data.export_output(search_el, view.export_format(), export_data.export_data())
-        view.view_data(data)
+        view.view_data(data + '\n')
         log.log(login, 1, search_el, data)
-        view.view_data('')
         phone_book(login)
     elif ops_type == '2':
         data = view.input_data()

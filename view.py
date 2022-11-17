@@ -6,10 +6,10 @@ def log_in():
     return input('Введите ваше имя:\n')
 
 
-def operation_type(message='Выберите способ взаимодействия'
-                           '\nДля эскпорта данных нажмите 1'
-                           '\nДля импорта данных нажмите 2'
-                           '\nДля выхода введите "exit"\n'):
+def operation_type(message='Выберите способ взаимодействия\n'
+                           'Для эскпорта данных нажмите 1\n'
+                           'Для импорта данных нажмите 2\n'
+                           'Для выхода введите "exit"\n'):
     op_type = input(message)
     while op_type != '1' and op_type != '2' and op_type != 'exit':
         op_type = operation_type('некорректный выбор, попробуйте еще раз\n')

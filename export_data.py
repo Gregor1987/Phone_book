@@ -15,7 +15,7 @@ def export_output(search_element, exp_form, data):
                 .replace('}, ', ';\n')\
                 .replace("'", '')
         else:
-            export_line = str(exported_data)[1: -1]\
+            export_line = str(exported_data)[1: -2]\
                 .replace(", ", '\n')\
                 .replace("{", '')\
                 .replace('}', '\n')\
