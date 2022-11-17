@@ -2,7 +2,7 @@ import json
 
 
 def import_data(data):
-    with open('phone_directory.json', 'r+') as file:
+    with open('phone_directory.json', 'w+') as file:
         if file.read() != '':
             file.seek(0)
             file_data = json.load(file)
